@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "mario_font";
+    src: url(./super_mario_256/SuperMario256.ttf);
+}
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+span {
+    font-family: "mario_font";
+    font-size: 3rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: "mario_font";
+    color: red;
+}
+
+header {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_box {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_line {
+    height: 0.7px;
+    width: 80vw;
+    background-color: black;
+    display: flex;
+    justify-self: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header ul li, a {
+    list-style: none;
+    cursor: pointer;
+}
+
+.background {
+    width: 100%;
+}
+
+.about_box {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f3f4;
+}
+
+.mario_2finger_box {
+    height: 35vh;
+} 
+
+.mario_2finger_gif {
+    height: 25vh;
+    width: 12vw;
+    border-radius: 100%;
+}
+
+.about_text {
+    width: 60vw;
+}
+
+.main_hystory {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mario_hystory_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.main_hystory p {
+    width: 20%;
+}
+
+.mario_first_game_box {
+    background-color: #f5f3f4;
+}
+
+.mario_first_img {
+    width: 20vw;
+}
+
+.ranked_list_box {
+    height: 40vh;
+}
+
+footer {
+    height: 28vh;
+}
+
+.social_media_box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_media_img {
+    width: 1.8rem;
+    cursor: pointer;
+}
+
+.power_up_gif {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_power_up_gif {
+    width: 10%;
+}
