@@ -7,8 +7,8 @@ body {
     border: 0;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
     font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 span {
@@ -58,6 +58,11 @@ header ul li, a {
     cursor: pointer;
 }
 
+header a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
 .background {
     width: 100%;
 }
@@ -103,12 +108,20 @@ header ul li, a {
     gap: 40px;
 }
 
-.main_hystory p {
+.mario_hystory_box p {
     width: 20%;
 }
 
 .mario_first_game_box {
-    background-color: #f5f3f4;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mario_first_game_box p {
+    text-align: center;
+    width: 45vw;
 }
 
 .mario_first_img {
@@ -117,10 +130,46 @@ header ul li, a {
 
 .ranked_list_box {
     height: 40vh;
+    background-color: #f5f3f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rendered_list_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rendered_list_box button {
+    height: 5vh;
+    width: 8vw;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "mario_font";
+}
+
+.rendered_list_box ol {
+    list-style: none;
+    counter-reset: inc;
+}
+
+.rendered_list_box ol li {
+    counter-increment: inc;
+    content: counter(inc);
+}
+
+.rendered_list_box ol li::before {
+    content: counter(inc) ". ";
+    font-family: "mario_font";
 }
 
 footer {
-    height: 28vh;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .social_media_box {

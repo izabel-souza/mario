@@ -1,13 +1,15 @@
 let rankedList = ["Super Mario World (SNES)", "Super Mario Bros. 3 (NES)", "Super Mario Galaxy (Wii)", "Super Mario Galaxy 2 (Wii)", "Super Mario Odyssey (Switch)"];
 
-let list = document.getElementById("mario_ranked_list");
+function renderList() {
 
-var fragmentedList = document.createDocumentFragment();
+    const olList = document.getElementById("mario_ranked_list");
 
-for(i = 0; i < rankedList.length; i++) {
-    var li = document.createElement("li");
-    li.textContent = rankedList(i);
-    fragmentedList.appendChild(li);
-}
+    olList.innerHTML = "";
 
-li.appendChild(fragmentedList);
+    rankedList.forEach(function(item) {
+        const listItem = document.createElement("li");
+        listItem.textContent = item;
+        olList.appendChild(listItem);
+    });
+
+};

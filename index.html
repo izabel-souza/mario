@@ -64,7 +64,7 @@
                 <h2>Sobre</h2>
                 <div class="about_text">
                     <p>Super Mario é uma série de jogos eletrônicos de plataforma, criada pela
-                        <span style="font-weight: bold; font-family: arial; font-size: 1rem">Nintendo,</span> 
+                        <span style="font-weight: bold; font-size: 1rem">Nintendo,</span> 
                     baseada e estrelada pelo encanador fictício Mario. Alternativamente chamada de série Super Mario Bros. ou simplesmente série Mario, é a série central da ampla franquia Mario.</p>
                 </div>
             </div>
@@ -77,19 +77,23 @@
             </div>
         </section>
         <section class="mario_first_game_box">
-            <div>
-                <p>Em 1983, Mario e seu irmão Luigi, agora encanadores, receberam a tarefa de derrotar várias criaturas que saiam dos esgotos no jogo de arcade chamado Mario Bros.</p>
-            </div>
-            <div>
-                <img src="./images/mario and luigi first game.jpg" alt="mario bros 1983" class="mario_first_img" />
-            </div>
+
+            <img src="./images/mario and luigi first game.jpg" alt="mario bros 1983" class="mario_first_img" />
+
+            <p>Em 1983, Mario e seu irmão Luigi, agora encanadores, receberam a tarefa de derrotar várias criaturas que saiam dos esgotos no jogo de arcade chamado Mario Bros.</p>
+
+            <img src="./images/mario background.jpg" />
+
         </section>
 
         <section class="ranked_list_box" id="lista">
             <h2>Rank</h2>
-            <nav>
-                <ul id="mario_ranked_list"></ul>
-            </nav>
+            <div class="rendered_list_box">
+                <button onClick="renderList()">Renderizar</button>
+                <nav>
+                    <ol id="mario_ranked_list"></ol>
+                </nav>
+            </div>
         </section>
 
     </main>
@@ -98,8 +102,14 @@
         <section>
             <div class="social_media_box">
                 <img src="./images/facebook_logo.png" alt="facebook black logo" class="social_media_img" title="Facebook" />
-                <img src="./images/youtube_logo.png" alt="youtube black logo" class="social_media_img" title="YouTube" />
+                
+                <a href="https://www.youtube.com/watch?v=XvQNlGKNC6o&ab_channel=NintendoofAmerica">
+
+                    <img src="./images/youtube_logo.png" alt="youtube black logo" class="social_media_img" title="YouTube" />
+
+                </a>
                 <img src="./images/instagram_logo.png" alt="instagram black logo" class="social_media_img" title="Instagram" />
+                
             </div>
             <div class="power_up_gif">
                 <img src="./images/mario power ups gif.gif" alt="power ups mario" class="footer_power_up_gif" />
